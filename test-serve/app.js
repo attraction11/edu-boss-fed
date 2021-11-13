@@ -16,6 +16,6 @@ app.use('/front', createProxyMiddleware({
   changeOrigin: true
 }))
 
-app.listen(3000, () => {
-  console.log('running...')
+app.listen(3020, () => {
+  console.log('running... at port 3020')
 })
