@@ -1,15 +1,18 @@
 <template>
-  <div id="app">
-    <!-- 根路由出口 -->
-    <router-view/>
+  <div class="role">
+    <role-list />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import RoleList from './components/List.vue'
 
 export default Vue.extend({
-  name: 'App'
+  name: 'RoleIndex',
+  components: {
+    RoleList
+  }
 })
 </script>
 
