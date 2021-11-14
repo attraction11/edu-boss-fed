@@ -22,85 +22,101 @@ const routes: Array<RouteConfig> = [
       {
         path: '', // 默认子路由
         name: 'home',
+        meta: { title: '首页' },
         component: () => import(/* webpackChunkName: 'home' */ '@/views/home/index.vue')
       },
       {
         path: '/role',
         name: 'role',
+        meta: { title: '角色管理' },
         component: () => import(/* webpackChunkName: 'role' */ '@/views/role/index.vue')
       },
       {
         path: '/menu',
         name: 'menu',
+        meta: { title: '菜单管理' },
         component: () => import(/* webpackChunkName: 'menu' */ '@/views/menu/index.vue')
       },
       {
         path: '/resource',
         name: 'resource',
+        meta: { title: '资源管理' },
         component: () => import(/* webpackChunkName: 'resource' */ '@/views/resource/index.vue')
       },
       {
         path: '/course',
         name: 'course',
+        meta: { title: '课程管理' },
         component: () => import(/* webpackChunkName: 'course' */ '@/views/course/index.vue')
       },
       {
         path: '/user',
         name: 'user',
+        meta: { title: '用户管理' },
         component: () => import(/* webpackChunkName: 'user' */ '@/views/user/index.vue')
       },
       {
         path: '/advert',
         name: 'advert',
+        meta: { title: '广告列表' },
         component: () => import(/* webpackChunkName: 'advert' */ '@/views/advert/index.vue')
       },
       {
         path: '/advert-space',
         name: 'advert-space',
-        component: () => import(/* webpackChunkName: 'advert-space' */ '@/views/advert-space/index.vue')
+        meta: { title: '广告位列表' },
+        component: () => import(/* webpackChunkName: 'advert' */ '@/views/advert-space/index.vue')
       },
       {
         path: '/menu/create',
         name: 'menu-create',
+        meta: { title: '添加菜单' },
         component: () => import(/* webpackChunkName: 'menu-create-edit' */ '@/views/menu/create.vue')
       },
       {
         path: '/menu/:id/edit',
         name: 'menu-edit',
+        meta: { title: '编辑菜单' },
         component: () => import(/* webpackChunkName: 'menu-create-edit' */ '@/views/menu/edit.vue')
       },
       {
         path: '/role/:roleId/alloc-menu',
         name: 'alloc-menu',
+        meta: { title: '分配菜单' },
         component: () => import(/* webpackChunkName: 'alloc-menu' */ '@/views/role/alloc-menu.vue'),
         props: true // 将路由路径参数映射到组件的 props 数据中
       },
       {
         path: '/role/:roleId/alloc-resource',
         name: 'alloc-resource',
+        meta: { title: '分配资源' },
         component: () => import(/* webpackChunkName: 'alloc-menu' */ '@/views/role/alloc-resource.vue'),
         props: true // 将路由路径参数映射到组件的 props 数据中
       },
       {
         path: '/course/create',
         name: 'course-create',
+        meta: { title: '添加课程' },
         component: () => import(/* webpackChunkName: 'course-create' */ '@/views/course/create.vue')
       },
       {
         path: '/course/:courseId/edit',
         name: 'course-edit',
+        meta: { title: '编辑课程' },
         component: () => import(/* webpackChunkName: 'course-edit' */ '@/views/course/edit.vue'),
         props: true
       },
       {
         path: '/course/:courseId/section',
         name: 'course-section',
+        meta: { title: '添加阶段' },
         component: () => import(/* webpackChunkName: 'course-section' */ '@/views/course/section.vue'),
         props: true
       },
       {
         path: '/course/:courseId/video',
         name: 'course-video',
+        meta: { title: '课程视频' },
         component: () => import(/* webpackChunkName: 'course-video' */ '@/views/course/video.vue'),
         props: true
       }

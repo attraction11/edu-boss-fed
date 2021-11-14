@@ -1,7 +1,7 @@
 <template>
   <el-card>
     <div slot="header">
-      <el-form :model="filterParams" ref="filter-form">
+      <el-form :model="filterParams" ref="filter-form" label-width="80px">
         <el-form-item label="手机号" prop="phone">
           <el-input v-model="filterParams.phone"></el-input>
         </el-form-item>

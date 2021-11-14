@@ -12,7 +12,7 @@
     >
       <el-submenu index="1">
         <template slot="title">
-          <i class="el-icon-location"></i>
+          <i class="el-icon-lock"></i>
           <span>权限管理</span>
         </template>
         <el-menu-item index="/role">

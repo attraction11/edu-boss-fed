@@ -46,6 +46,8 @@ export default Vue.extend({
   position: sticky;
   top: 0;
   z-index: 100;
+  height: auto;
+  padding: 0 20px 0 0;
 }
 
 .el-main {

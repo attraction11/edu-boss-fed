@@ -3,7 +3,7 @@
     <el-card class="box-card">
       <div slot="header" class="clearfix">
         <!-- <span>筛选搜索</span> -->
-        <el-form ref="form" :model="form">
+        <el-form ref="form" :model="form" label-width="80px" class="role-search">
           <el-form-item label="角色名称" prop="name">
             <el-input v-model="form.name"></el-input>
           </el-form-item>
@@ -181,4 +181,5 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
